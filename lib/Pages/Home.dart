@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:website/Constant/Colors.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -14,8 +15,26 @@ class _HomeState extends State<Home> {
       body: ListView(
         scrollDirection: Axis.vertical,
         children: [
+          // Main
           Container(
-            height: 50,
+            height: 500,
+            width: double.infinity,
+            color: Colors.blueGrey, 
+           child: Row(
+            children: [
+              Text("Logo"),
+             
+              TextButton(onPressed: (){}, child: Text("data"))
+            ],
+           ),
+          ),
+           Container(
+            height: 500,
+            width: double.infinity,
+           
+          ),
+           Container(
+            height: 500,
             width: double.infinity,
             color: Colors.blueGrey,
           )
